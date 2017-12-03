@@ -5,11 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.examples.spring.demo.config.DemoConfig;
 import com.examples.spring.demo.todo.ITodo;
 
 @RunWith(SpringRunner.class)
+@ContextConfiguration(classes=DemoConfig.class)
 public class SpringDILearningTests {
 
 	@Autowired
