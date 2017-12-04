@@ -16,4 +16,9 @@ public class TodoClientWithConstructorInjection {
 	public String showTodo() {
 		return getClass().getSimpleName() + ": " + todo.toString();
 	}
+
+	public ITodo getTodo() {
+		return todo;
+	}
+
 }
